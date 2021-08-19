@@ -28,7 +28,7 @@ class Converter
             if ($fileOneParts['extension'] == 'json' && $fileTwoParts['extension'] == 'json') {
                 $this->OpenFiles();
             } else {
-                print "Błędne rozrzeżenie plików wybierz pliki .json";
+                print "Wrong file file extension, select .json files";
             }
         }
     }
@@ -82,5 +82,5 @@ class Converter
 if (isset($argv[1]) || isset($argv[2])) {
     new Converter($argv[1], $argv[2]);
 } else {
-    print "Brak podanej lokalizacji plików.";
+    print "No file location specified.";
 }
